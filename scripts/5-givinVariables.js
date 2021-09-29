@@ -1,7 +1,6 @@
 console.log('givin variables');
 
 let firstName = 'matheus';
-const age = 21;
 const surname = 'tavares'
 
 //console.log(firstName + ' ' + surname);
@@ -10,5 +9,9 @@ const surname = 'tavares'
 //console.log(`my name is ${firstName} ${surname}`);
 
 const fullName = firstName + ' ' + surname;
-
 console.log(fullName);
+
+let age;
+age = 21;
+age = age + 1;
+console.log(age);
