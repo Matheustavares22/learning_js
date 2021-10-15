@@ -1,3 +1,5 @@
+import { Negociations } from "../models/negociations.js";
+
 export class NegociationsView {
 
     private element: HTMLElement;
@@ -8,7 +10,7 @@ export class NegociationsView {
         // JavaScript Uncaught TypeError: cannot set property ‘innerHTML’ of null Solution
     }
     
-    template(): string {    
+    template(model: Negociations): string {    
         // ` allows you to type a block of string without having to use concatenations                
         return `
         <table class="table table-hover table-bordered">
@@ -20,12 +22,23 @@ export class NegociationsView {
                 </tr>                
             </thead>
             <tbody>
+                ${model.list().map(negociation => {
+                    return `
+                    <tr>
+                        <td>${new Intl.DateTimeFormat().format(negociation.date)}</td>
+                        <td>${negociation.quantity}</td>
+                        <td>${negociation.value}</td>
+                    </tr>
+                    `;
+                }).join('')}
             </tbody>
         </table>
         `;
     }
 
-    update(): void {
-        this.element.innerHTML = this.template();
+    update(model: Negociations): void {
+        const template = this.template(model);
+        console.log(template);
+        this.element.innerHTML = template;
     }
 }

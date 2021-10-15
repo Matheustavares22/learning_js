@@ -5,12 +5,12 @@ export class Negociation {
         public readonly value: number
     ) {}
 
-    get date(): Date {
-        const data = new Date(this._date.getTime());
-        return this.date;
-    }
-
     get volume(): number {
         return this.quantity * this.value;
+    }
+
+    get date(): Date {
+        const date = new Date(this._date.getTime());
+        return date;
     }
 }

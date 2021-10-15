@@ -4,11 +4,11 @@ export class Negociation {
         this.quantity = quantity;
         this.value = value;
     }
-    get date() {
-        const data = new Date(this._date.getTime());
-        return this.date;
-    }
     get volume() {
         return this.quantity * this.value;
+    }
+    get date() {
+        const date = new Date(this._date.getTime());
+        return date;
     }
 }
