@@ -1,2 +1,1 @@
-this is my learning javascript repository
-here you will find some basic uses of javascript"
+this is my learning javascript and typescript repository
