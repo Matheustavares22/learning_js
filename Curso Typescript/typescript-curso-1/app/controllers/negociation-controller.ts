@@ -1,39 +1,42 @@
 import { Negociation } from "../models/negociation.js";
 import { Negociations } from "../models/negociations.js";
+import { NegociationsView } from "../views/negociations-view.js";
 
 export class NegociationController {
-    private inputData: HTMLInputElement;
-    private inputQuantity: HTMLInputElement;
-    private inputValue: HTMLInputElement;
-    private negociations = new Negociations();
+    private _inputData: HTMLInputElement;
+    private _inputQuantity: HTMLInputElement;
+    private _inputValue: HTMLInputElement;
+    private _negociations = new Negociations()!;
+    private _negociationsView = new NegociationsView('#negociationsView')!;
 
     constructor() {
-        this.inputData = document.querySelector('#date');
-        this.inputQuantity = document.querySelector('#quantity');
-        this.inputValue = document.querySelector('#value');        
+        this._inputData = document.querySelector('#date')!;
+        this._inputQuantity = document.querySelector('#quantity')!;
+        this._inputValue = document.querySelector('#value')!;
+        this._negociationsView.update();
     }
 
     addNegociation(): void {        
         const negociation: Negociation = this.createNegociation();
-        this.negociations.add(negociation);
-        this.negociations.list().pop;
-        console.log(this.negociations.list());
+        this._negociations.add(negociation);
+        this._negociations.list();
+        console.log(this._negociations.list());
         this.cleanForm();
     }
 
     createNegociation(): Negociation {
         const exp = /-/g;
-        const date: Date = new Date(this.inputData.value.replace(exp, ','));
-        const quantity: number = parseInt(this.inputQuantity.value);
-        const value: number = parseInt(this.inputValue.value);
+        const date: Date = new Date(this._inputData.value.replace(exp, ','));
+        const quantity: number = parseInt(this._inputQuantity.value);
+        const value: number = parseInt(this._inputValue.value);
         return new Negociation(date, quantity, value);
     }
 
-    cleanForm(): void{
-        this.inputData.value = '';
-        this.inputQuantity.value = '';
-        this.inputValue.value = '';
-        this.inputData.focus();
+    cleanForm(): void {
+        this._inputData.value = '';
+        this._inputQuantity.value = '';
+        this._inputValue.value = '';
+        this._inputData.focus();
     }
 
 }
