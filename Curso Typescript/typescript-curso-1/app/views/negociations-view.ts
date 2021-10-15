@@ -38,7 +38,6 @@ export class NegociationsView {
 
     update(model: Negociations): void {
         const template = this.template(model);
-        console.log(template);
         this.element.innerHTML = template;
     }
 }

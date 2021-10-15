@@ -1,4 +1,4 @@
-export class NegociationsView {
+export class MessageView {
     constructor(selector) {
         this.element = document.querySelector(selector);
         // I solved a problem here, I was using selectById, and the run time console was throwing 
