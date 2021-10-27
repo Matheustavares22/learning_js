@@ -10,29 +10,9 @@ export class MessageView {
         // JavaScript Uncaught TypeError: cannot set property ‘innerHTML’ of null Solution
     }
     
-    template(model: Negociations): string {    
-        // ` allows you to type a block of string without having to use concatenations                
+    template(model: string): string {            
         return `
-        <table class="table table-hover table-bordered">
-            <thead>
-                <tr>
-                    <th>DATE</th>
-                    <th>QUANTITY</th>
-                    <th>VALUES</th>
-                </tr>                
-            </thead>
-            <tbody>
-                ${model.list().map(negociation => {
-                    return `
-                    <tr>
-                        <td>${new Intl.DateTimeFormat().format(negociation.date)}</td>
-                        <td>${negociation.quantity}</td>
-                        <td>${negociation.value}</td>
-                    </tr>
-                    `;
-                }).join('')}
-            </tbody>
-        </table>
+        <p class="alert alert-info"></p>
         `;
     }
 

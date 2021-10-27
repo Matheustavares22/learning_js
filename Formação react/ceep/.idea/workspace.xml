@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a8fef200-332c-401d-860d-45aa1bf94896" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Curso Typescript/typescript-curso-1/app/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Curso Typescript/typescript-curso-1/app/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Curso Typescript/typescript-curso-1/app/views/message-view.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../Curso Typescript/typescript-curso-1/app/views/message-view.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1zljAy4Gmc9jo1YksXmfGOcpax6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8fef200-332c-401d-860d-45aa1bf94896" name="Default Changelist" comment="" />
+      <created>1634729431479</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634729431479</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
